@@ -17,7 +17,7 @@ document.getElementById("cep").addEventListener("blur", (evento)=>{
                 alert("cep não encontrado.")
             }
 
-
+            validarFormulario();
 
 
         } )
