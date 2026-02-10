@@ -26,9 +26,20 @@ document.getElementById("cep").addEventListener("blur", (evento)=>{
 
 })
 
-document.addEventListener('DOMContentLoaded', ("evento") =>{
-    const nome = localStorage.getItem("Nome");
-    if(nome){
-        document.getElementById("nome").value = nome;
+    function validarFormulario(){
+        const nome = document.getElementById("nome").value
+        localStorage.setItem('nomeUsuario', nome);
+
+        const idade = document.getElementById("idade").value
+        localStorage.setItem('idadeUsuario', idade);
+
+        const numero = document.getElementById("numero").value
+        localStorage.setItem('numeroUsuario', numero);
+
+        const cep = document.getElementById("cep").value
+        localStorage.setItem('cepUsuario', cep);
+
+    
     }
-})
+
+    
